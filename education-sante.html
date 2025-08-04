@@ -15,3 +15,54 @@
   <a href="index.html">← Retour à l'accueil</a>
 </body>
 </html>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="sante.html">Santé</a>
+      <a href="education.html">Éducation</a>
+      <a href="education-sante.html">Éducation à la santé</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bienvenue sur ma page personnelle</h1>
+    <p>Thématiques : santé, éducation, et éducation à la santé.</p>
+  </main>
+</body>
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2a9d8f;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 6rem 2rem 2rem; /* espace pour compenser le menu fixe */
+}
